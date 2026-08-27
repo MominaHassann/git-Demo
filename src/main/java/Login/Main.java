@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    static void main() throws InterruptedException {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         IO.println(String.format("Hello and welcome!"));
@@ -21,7 +21,8 @@ public class Main {
 //=======
             System.out.println("MominaNewchanges");
             WebDriver driver= new ChromeDriver();
-            driver.get("abc");
+            driver.get("abcs");
+            Thread.sleep(3000);
 
         }
     }

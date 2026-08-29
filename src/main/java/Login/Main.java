@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.sql.Driver;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -23,8 +25,8 @@ public class Main {
             System.out.println("MominaNewchanges");
             WebDriver driver= new ChromeDriver();
             driver.get("https://www.youtube.com/watch?v=68XLP0ayjPA&list=PLL34mf651faMBuvJa915xQ-BU6lB1Km84&index=6");
-            Thread.sleep(3000);
-            driver.findElement(By.xpath("//*[@id=\"movie_player\"]/div[1]/video")).click();
+            Thread.sleep(10000);
+            driver.findElement(By.xpath("//*[@id=\"trailing-icon\"]/span[1]")).click();
 
         }
     }
